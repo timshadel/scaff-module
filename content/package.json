@@ -1,0 +1,20 @@
+{
+  "name": "{{project}}",
+  "version": "0.1.0",
+  "description": "{{description}}",
+  "keywords": [],
+  "author": "{{author}} <{{email}}>",
+  "repository": { "type": "git", "url": "git+https://github.com/{{username}}/{{project}}.git" },
+  "dependencies": {
+    "simple-debug": "*",
+    "metric-log": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "expect.js": "*"
+  },
+  "scripts": {
+    "test": "NPM_PATH=lib NODE_ENV=test mocha"
+  },
+  "main": "index"
+}
