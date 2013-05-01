@@ -12,6 +12,6 @@ exports.variables = {
   , author: "Enter your name: "
   , email: "Enter your email: "
   , username: "Enter your github username: "
-  , date: formatDate(today)
-  , year: today.getFullYear()
+  , date: function(responses, done) { responses.date = formatDate(today); done() }
+  , year: function(responses, done) { responses.year = today.getFullYear(); done() }
 };
